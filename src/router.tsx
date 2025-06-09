@@ -1,5 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import App from './App';
+import Login from "./pages/Login.tsx";
+import Register from "./pages/Register.tsx";
 
 export const router = createBrowserRouter([
     {
@@ -8,8 +10,14 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Navigate to="/dashboard" replace />
-            },
+                element: <Navigate to="/login" replace />
+            }, {
+                path: 'login',
+                element: <Login />
+            }, {
+                path: 'register',
+                element: <Register />
+            }
         ]
     }
 ])

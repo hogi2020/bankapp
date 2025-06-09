@@ -4,7 +4,9 @@ const config: CapacitorConfig = {
   appId: 'com.example.bankapp',
   appName: 'bankapp',
   webDir: 'dist',
-  server: { androidScheme: 'https' }
+  server: {
+    androidScheme: 'https'
+  }
 };
 
 export default config;
